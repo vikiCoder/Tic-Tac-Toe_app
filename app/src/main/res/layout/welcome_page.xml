@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="210dp"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tac"
+                android:id="@+id/textView"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="40dp"
+                android:textColor="#1a4dbb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tic"
+                android:id="@+id/textView2"
+                android:layout_above="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:textSize="40dp"
+                android:textColor="#2bb81c" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Toe"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:textSize="40dp"
+                android:textColor="#FF2DB8AC" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="300dp"
+            android:id="@+id/welcomeImage"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="175dp"
+            android:src="@drawable/welcome"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="475dp"/>
+
+    </RelativeLayout>
+</LinearLayout>
