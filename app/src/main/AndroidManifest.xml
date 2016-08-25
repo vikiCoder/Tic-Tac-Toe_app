@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- suppress AndroidDomInspection -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.viki.firstapp.tic_tac_toe">
 
@@ -18,13 +18,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainPage"
             android:label="@string/title_activity_main_page"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="com.viki.firstapp.FIRSTPAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpPage"
+            android:label="@string/title_activity_help_page"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.viki.firstapp.HELPPAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutPage"
+            android:label="@string/title_activity_about_page"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.viki.firstapp.ABOUTPAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DoublePlayerPage"
+            android:label="@string/title_activity_doubleplayer_page"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.viki.firstapp.DOUBLEPLAYERPAGE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

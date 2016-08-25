@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clickable="false">
+    android:clickable="false"
+    android:background="@drawable/appbg">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,30 +13,27 @@
         android:id="@+id/textView4"
         android:layout_gravity="center_horizontal"
         android:textColor="#1c42dc"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:shadowColor="#f00"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="15"
         android:textSize="50dp"
         android:layout_marginTop="40dp"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="160dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Single Player"
-        android:id="@+id/single_player"
-        android:layout_marginTop="70dp"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:text="Double Player"
+        android:text="...Play..."
         android:id="@+id/double_player"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="50dp"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="100dp"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:text="Help"
         android:id="@+id/help"
@@ -44,7 +42,7 @@
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="75dp"
+        android:layout_width="85dp"
         android:layout_height="wrap_content"
         android:text="About"
         android:id="@+id/about"

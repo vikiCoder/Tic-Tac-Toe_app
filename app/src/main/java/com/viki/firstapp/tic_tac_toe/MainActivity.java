@@ -3,27 +3,37 @@ package com.viki.firstapp.tic_tac_toe;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
+import android.view.KeyEvent;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Thread change;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Thread change = new Thread(){
+        final Intent startMainPage = new Intent(this, MainPage.class);
+
+        change = new Thread(){
             public void run(){
                 try{
-                    sleep(5000);
-                } catch(InterruptedException e){
+                    sleep(3000);
+                } catch(Exception e){
                     System.out.println("Error in thread change");
                 }
-                Intent startMainPage = new Intent("com.viki.firstapp.FIRSTPAGE");
+
                 startActivity(startMainPage);
+                finish();
             }
         };
         change.start();
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        System.exit(0);
+        return super.onKeyDown(keyCode, event);
     }
 }

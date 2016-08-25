@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome"
+        android:id="@+id/textView4"
+        android:textColor="#1c42dc"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:shadowColor="#f00"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="15"
+        android:textSize="60dp"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="...Play..."
+            android:id="@+id/double_player"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:id="@+id/help"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:id="@+id/about"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:id="@+id/exit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

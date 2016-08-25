@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="X's turn"
+        android:id="@+id/status"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#de1a20"
+        android:textSize="35dp"
+        android:typeface="monospace"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b00"
+            android:layout_gravity="left|top" />
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b01"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b02"
+            android:layout_gravity="right|top" />
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b10"
+            android:layout_gravity="left|center_vertical" />
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b11"
+            android:layout_gravity="center" />
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b12"
+            android:layout_gravity="right|center_vertical" />
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b20"
+            android:layout_gravity="left|bottom" />
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b21"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b22"
+            android:layout_gravity="right|bottom" />
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:background="@drawable/board"
+            android:id="@+id/imageView"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:id="@+id/lay"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/reset"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="40dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

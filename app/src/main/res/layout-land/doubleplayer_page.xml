@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:layout_gravity="center"
+        android:background="@drawable/board">
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/b00"
+            android:layout_gravity="left|top"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/b01"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/b02"
+            android:layout_gravity="right|top"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/b10"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/b11"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/b12"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/b20"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/b21"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:background="@drawable/b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/b22"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="5dp"/>
+        
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="X's turn"
+            android:id="@+id/status"
+            android:textColor="#de1a20"
+            android:textSize="35dp"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:layout_margin="40dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/reset"
+            android:layout_margin="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/back"
+            android:layout_margin="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</LinearLayout>
